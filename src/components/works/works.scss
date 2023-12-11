@@ -1,0 +1,213 @@
+.works-section {
+  height: 100vh;
+  scroll-snap-align: center;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  color: black;
+  
+  
+
+  background-size: cover;
+
+  .works-container {
+    height: 100vh;
+    width: 1400px;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    @media only screen and (max-width: 768px) {
+      width: 100%;
+      flex-direction: column;
+    }
+
+    .works-left {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      
+      @media only screen and (max-width: 768px) {
+        padding: 20px;
+        justify-content: center;
+      }
+
+      ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        li {
+          font-size: 80px;
+          font-weight: bold;
+          cursor: pointer;
+          color: transparent;
+          -webkit-text-stroke: 4px black;
+          
+          position: relative;
+
+          @media only screen and (max-width: 768px) {
+            font-size: 24px;
+            color: black;
+            -webkit-text-stroke: 0px;
+          }
+
+          &::after {
+            content: attr(data-text);
+            position: absolute;
+            top: 0;
+            left: 0;
+            color: #a8a8a8;
+            width: 0px;
+            overflow: hidden;
+            white-space: nowrap;
+          }
+
+          &:hover {
+            &::after {
+              animation: moveText 0.5s linear both;
+
+              @keyframes moveText {
+                to {
+                  width: 100%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .works-left ul li.selected {
+      color: #a8a8a8; /* Reemplaza con el color que desees */
+    }
+
+    .works-right {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #a8a8a8;
+
+      
+
+      .info-box {
+        //background-color:rgb(250, 246, 236);
+        //border: 3px solid #a8a8a8;
+        //box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        
+        width: 520px; /* Ajusta el ancho según sea necesario */
+        height: 600px;
+        max-width: 100%; /* Haz que el cuadro ocupe el 100% del ancho disponible */
+        position: relative;
+        z-index: 2;
+        border-radius: 10px;
+        font-family: Arial, sans-serif;
+     
+        
+        @media only screen and (max-width: 768px) {
+        
+          height: 100%;
+        
+      }
+
+
+      
+
+      .contenido-info-box{
+        font-family: 'Arial', sans-serif; /* Agrega esta línea para cambiar la fuente del contenido */
+    
+       // ...
+
+.software-info {
+  display: flex;
+  align-items: center;
+
+  
+  margin-bottom: -80px;
+
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+
+  .software-text {
+    flex: 1;
+
+
+  }
+
+  .software-image {
+    width: 50%; /* Ajusta el tamaño según sea necesario (cambié a 250px) */
+    margin-left: 20px; /* Espacio entre el texto y la imagen */
+
+    @media only screen and (max-width: 768px) {
+      margin-left: 0; /* Elimina el espacio entre el texto y la imagen en dispositivos pequeños */
+      margin-top: 10px; /* Añade espacio entre las imágenes en dispositivos pequeños */
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}
+
+
+
+        
+        
+      
+        .img-certificaciones {
+          display: grid;
+          place-items: center;
+          width: 199%;
+          height: auto;
+          margin-top: 20px; /* Puedes ajustar el margen según tus necesidades */
+          margin-right: 60px;
+          
+          position: relative; 
+          left: 50%;
+transform: translateX(-50%);
+        }
+      }
+
+
+      
+        h2 {
+          color: black; /* Puedes cambiar el color del título según tus preferencias */
+          border-bottom: 2px solid black; /* Cambia el color y grosor según tu preferencia */
+          padding-bottom: 10px; /* Ajusta según sea necesario */
+          margin-bottom: 20px; /* Ajusta según sea necesario */
+          font-size: 58px;
+      
+          @media only screen and (max-width: 768px) {
+        
+            font-size: 24px;
+          
+        }
+        }
+
+        p {
+          margin: 0;
+          font-size: 15px;
+          color: black;
+          line-height: 1.5;
+        
+          @media only screen and (max-width: 768px) {
+        
+            font-size: 20px;
+          
+        }
+        }
+
+        
+        
+      }
+
+      
+    }
+  }
+}
+
+

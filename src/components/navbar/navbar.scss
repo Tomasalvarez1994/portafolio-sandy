@@ -1,0 +1,86 @@
+// navbar.scss
+.section-navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #a8a8a8;
+  z-index: 1000;
+
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+  }
+}
+
+.container-navbar {
+  width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+  }
+}
+
+.links-navbar {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+
+  img {
+    height: 50px;
+  }
+
+  ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+
+    li {
+      cursor: pointer;
+      
+
+      button {
+        background: none;
+        border: none;
+        padding: 0;
+        font: inherit;
+        cursor: pointer;
+        color: white;
+      }
+
+      &.active {
+        color: #ffcc00;
+        font-weight: bold;
+      }
+    }
+
+    @media only screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+}
+
+.icons-navbar {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  img {
+    width: 20px;
+    cursor: pointer;
+  }
+
+  button {
+    width: 100px;
+    padding: 10px;
+    background-color:black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+}
+
+// Agrega estilos adicionales según sea necesario

@@ -1,0 +1,25 @@
+
+/* App.css */
+body {
+  margin: 0;
+  
+}
+
+.app-container{
+  height: 100vh;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  overflow-y: auto;
+  scrollbar-width: none;
+  color: white;
+
+  
+  .app-container::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+
+
+
+
